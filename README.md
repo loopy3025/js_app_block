@@ -1,10 +1,10 @@
 # React Subpages
 
-This module will allow users to include the React Library on any page in their Drupal site, selecting by entity type, view, url, or other factors. Users will also be able to determine whether they want to reference the remote library or a local copy. Lastly, the module will let users decide which region will be used to display React content and the location of the javascript being used to process the content.
+This module will allow users to include any number of React Apps on pages of their choosing on any non-decoupled Drupal site. They will be able to select by entity type, view, url, or other factors. Users will also be able to determine whether they want to reference the remote library or a local copy. Lastly, the module will let users decide which region will be used to display React content and the location of the javascript being used to process the content.
 
 ## To Do
 
-- [ ] Create basic structure of Module
+- [x] Create basic structure of Module
 - [ ] Simple example of using the Module to include the library globally
 - [ ] Create basic admin page that either includes the library or does not
 - [ ] Admin setting that determines the region which will include React App

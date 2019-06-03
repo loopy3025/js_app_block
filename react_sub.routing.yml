@@ -1,0 +1,7 @@
+react_sub.content:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\react_sub\Controller\HelloController::content'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+name: React Subpages
+description: Allows users to include their custom react apps on specific pages in a traditional, non-decoupled Drupal 8 installation.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

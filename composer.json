@@ -1,0 +1,20 @@
+{
+    "name": "drupal/react_sub",
+    "description": "React Subpages allows users to include their custom react apps on specific pages in a traditional, non-decoupled Drupal 8 installation.",
+    "type": "drupal-module",
+    "homepage": "https://drupal.org/project/react_sub",
+    "authors": [
+        {
+            "name": "Adam Fasoldt (loopy3025)",
+            "homepage": "https://www.drupal.org/u/loopy1492",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://drupal.org/project/issues/react_sub",
+        "source": "https://github.com/loopy3025/react_sub"
+    },
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {}
+}
