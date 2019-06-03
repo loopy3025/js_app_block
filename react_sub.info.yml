@@ -4,3 +4,7 @@ package: WebNY
 type: module
 version: 1.0
 core: 8.x
+
+libraries:
+  - react_sub/react
+  - react_sub/react-dom

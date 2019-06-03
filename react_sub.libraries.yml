@@ -2,4 +2,7 @@ react:
   version: 16.8.6
   js:
     js/react.js: {}
-    js/react-dom.js: {}
+react-dom:
+  version: 16.8.6
+  js:
+    js/react.dom.js: {}
