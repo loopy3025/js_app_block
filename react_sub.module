@@ -1,0 +1,22 @@
+<?php
+
+function react_sub_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'react_sub/react';
+  $attachments['#attached']['library'][] = 'react_sub/react-dom';
+}
+// function my_module_page_attachments(array &$page) {
+//   $page['#attached']['library'][] = 'my_module/my_module.lib';
+// }
+// public function content() {
+//     return [
+//         '#attached' => array(
+//             'library' =>  array(
+//                 'react_sub/react',
+//                 'react_sub/react-dom',
+//             ),
+//         ),
+//     ];
+// }
+
+//drupal_add_js('path/to/js/file.js');
+// $variables['#attached']['library'][] = 

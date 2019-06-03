@@ -6,7 +6,7 @@ This module will allow users to include any number of React Apps on pages of the
 
 - [x] Create basic structure of Module
 - [x] Simple example of using the Module to include the library on a specific page
-- [ ] Evoke the inclusion of the library globally
+- [x] Evoke the inclusion of the library globally
 - [ ] Create basic admin page that either includes the library or does not
 - [ ] Admin setting that determines the region which will include React App
 - [ ] Admin setting that determines the location of the App javascript file that manages the React content

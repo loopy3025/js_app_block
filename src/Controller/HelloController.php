@@ -19,12 +19,12 @@ class HelloController extends ControllerBase {
     return [
       '#type' => 'markup',
       '#markup' => $this->t('Hello, World!'),
-      '#attached' => array(
-        'library' =>  array(
-          'react_sub/react',
-          'react_sub/react-dom',
-        ),
-      ),
+      // '#attached' => array(
+      //   'library' =>  array(
+      //     'react_sub/react',
+      //     'react_sub/react-dom',
+      //   ),
+      //),
     ];
   }
 

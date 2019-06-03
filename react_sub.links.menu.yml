@@ -2,5 +2,5 @@ react-sub.admin:
   title: 'React Subpages Admin Settings'
   description: 'Administer the React Subpages Module'
   parent: system.admin_config_development
-  route_name: hello_world.content
+  route_name: react-sub.content
   weight: 100
