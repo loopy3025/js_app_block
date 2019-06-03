@@ -9,12 +9,9 @@ This module will allow users to include any number of React Apps on pages of the
 - [x] Evoke the inclusion of the library globally
 - [x] Create basic admin page that either includes the library globally or does not
 - [ ] Admin setting that determines the location of the App javascript file that manages the React content - just one app for now
-- [ ] Admin setting that determines the region which will include React App - just one app for now
-- [ ] Add an admin setting for conditions under which the App appears
-> - [ ] Content Type
-> - [ ] View Display
-> - [ ] Paths
-- [ ] Add logic to allow for the inclusion of multiple apps, each with the settings above (location, javascript file, context. etc.)
+- [ ] Programatically create a block for the react app to appear in - just one app for now
+- [ ] Add an admin setting for the context under which the App appears (Content Type, View Display, Paths, etc) - * NOTE: is this even necessary if we use a block? *
+- [ ] Add logic to allow for the inclusion of multiple apps, each with the settings above (block, javascript file, context. etc.)
 - [ ] Add logic for allowing the user to use diofferent versions of react, including remote versions?
 
 ## Basic Usage
