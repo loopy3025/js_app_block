@@ -11,8 +11,8 @@ This module will allow users to include the React Library on any page in their D
 - [ ] Admin setting that determines the location of the App javascript file that manages the React content
 - [ ] Create logic for the React App object in the database as a way of organizing all the other data for an instance of React content. At this early stage, only include the App Region and location of the App javascript.
 - [ ] Add an admin setting for conditions under which the App appears
-- - [ ] Content Type: checkbox
-- - [ ] View Display: checkbox
-- - [ ] Paths: textbox with a different path on each line
+> - [ ] Content Type: checkbox
+> - [ ] View Display: checkbox
+> - [ ] Paths: textbox with a different path on each line
 
 ## Notes
