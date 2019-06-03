@@ -2,9 +2,5 @@ name: React Subpages
 description: Allows users to include their custom react apps on specific pages in a traditional, non-decoupled Drupal 8 installation.
 package: WebNY
 type: module
-version: 1.0
+version: 1.4
 core: 8.x
-
-libraries:
-  - react_sub/react
-  - react_sub/react-dom
