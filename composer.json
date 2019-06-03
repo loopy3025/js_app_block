@@ -1,5 +1,5 @@
 {
-    "name": "drupal/react_sub",
+    "name": "drupal/react-sub",
     "description": "React Subpages allows users to include their custom react apps on specific pages in a traditional, non-decoupled Drupal 8 installation.",
     "type": "drupal-module",
     "homepage": "https://drupal.org/project/react_sub",

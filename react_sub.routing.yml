@@ -1,4 +1,4 @@
-react_sub.content:
+react-sub.content:
   path: '/hello'
   defaults:
     _controller: '\Drupal\react_sub\Controller\HelloController::content'
