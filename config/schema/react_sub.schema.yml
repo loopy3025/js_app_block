@@ -3,5 +3,8 @@ react_sub:
   label: "React Subpages"
   mapping:
     global_react:
-        type: boolean
-        label: "React Installed Globally"
+      type: boolean
+      label: "React Installed Globally"
+    app_script:
+      type: string
+      label: "React App Script"

@@ -1,5 +1,12 @@
 <?php
 /**
+ * Creates a variable for the app script
+ */
+function react_sub_update_8006() {
+  $config = \Drupal::service('config.factory')->getEditable('react_sub.settings');
+  $config -> set('app_script','/sites/default/files/react-apps/example.js') -> save();
+}
+/**
  * Change from false to 0
  */
 function react_sub_update_8004() {

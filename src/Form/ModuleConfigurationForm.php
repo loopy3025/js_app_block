@@ -39,6 +39,12 @@ class ModuleConfigurationForm extends ConfigFormBase {
       '#title' => $this->t('Enable React Globally'),
       '#default_value' => $config->get('global_react'),
     ];  
+    $form['react_sub_app_script'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('React App Script'),
+      '#default_value' => $config->get('app_script'),
+    ];  
+    
 
     return parent::buildForm($form, $form_state);
   }
@@ -51,8 +57,7 @@ class ModuleConfigurationForm extends ConfigFormBase {
        $this->configFactory->getEditable(static::SETTINGS)
       // Set the submitted configuration setting
       ->set('global_react', $form_state->getValue('react_sub_global_react'))
-      // You can set multiple configurations at once by making
-      // multiple calls to set()
+      ->set('app_script', $form_state->getValue('react_sub_app_script'))
       ->save();
 
     parent::submitForm($form, $form_state);

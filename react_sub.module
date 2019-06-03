@@ -1,12 +1,25 @@
 <?php
+// logic getting info on any react blocks that may be present
+// here
+
+// include react library if necessary
 function react_sub_page_attachments(array &$attachments) {
   $react_global = \Drupal::config('react_sub.settings')->get('global_react');
-  // if our variable for setting react globally is set, then enable it globally
+  // if our variable for setting react globally is set, or if a react block is present, include react
   if ($react_global == 1){
     $attachments['#attached']['library'][] = 'react_sub/react';
     $attachments['#attached']['library'][] = 'react_sub/react-dom';
-  // otherwise, parse through the different settings, turning it on and off based on the page we are on
-  } else {
-
   }
+  //first step: get global variable for react app
+  //if not null
+    // if file exists
+      // create block programatically
+        // include javascript in footer
+
+  // once that is working, shift to...
+  // if react blocks are present, include their javascript in the order they appear on the page
+  // for each react block on the page
+    // get their javascript file settings
+    // include file in javascript attachment
+    // $attachments['#attached']
 }
