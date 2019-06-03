@@ -1,22 +1,12 @@
 <?php
-
 function react_sub_page_attachments(array &$attachments) {
-  $attachments['#attached']['library'][] = 'react_sub/react';
-  $attachments['#attached']['library'][] = 'react_sub/react-dom';
-}
-// function my_module_page_attachments(array &$page) {
-//   $page['#attached']['library'][] = 'my_module/my_module.lib';
-// }
-// public function content() {
-//     return [
-//         '#attached' => array(
-//             'library' =>  array(
-//                 'react_sub/react',
-//                 'react_sub/react-dom',
-//             ),
-//         ),
-//     ];
-// }
+  $react_global = \Drupal::config('react_sub.settings')->get('global_react');
+  // if our variable for setting react globally is set, then enable it globally
+  if ($react_global == 1){
+    $attachments['#attached']['library'][] = 'react_sub/react';
+    $attachments['#attached']['library'][] = 'react_sub/react-dom';
+  // otherwise, parse through the different settings, turning it on and off based on the page we are on
+  } else {
 
-//drupal_add_js('path/to/js/file.js');
-// $variables['#attached']['library'][] = 
+  }
+}

@@ -1,0 +1,7 @@
+react_sub:
+  type: mapping
+  label: "React Subpages"
+  mapping:
+    global_react:
+        type: boolean
+        label: "React Installed Globally"
