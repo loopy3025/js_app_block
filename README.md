@@ -15,6 +15,7 @@ This module will allow users to include any number of React Apps on pages of the
 > - [ ] View Display
 > - [ ] Paths
 - [ ] Add logic to allow for the inclusion of multiple apps, each with the settings above (location, javascript file, context. etc.)
+- [ ] Add logic for allowing the user to use diofferent versions of react, including remote versions?
 
 ## Basic Usage
 
