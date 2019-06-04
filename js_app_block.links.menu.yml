@@ -1,0 +1,6 @@
+js_app_block.admin:
+  title: 'Javascript App Block Admin Settings'
+  description: 'Administer the Javascript App Block Module'
+  parent: system.admin_config_development
+  route_name: js_app_block.settings
+  weight: 100
