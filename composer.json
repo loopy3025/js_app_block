@@ -1,8 +1,8 @@
 {
-    "name": "drupal/react-sub",
-    "description": "React Subpages allows users to include their custom react apps on specific pages in a traditional, non-decoupled Drupal 8 installation.",
+    "name": "drupal/js-app-block",
+    "description": "Javascript App Block allows users to include their custom Javascript apps on specific pages in a traditional, non-decoupled Drupal 8 installation.",
     "type": "drupal-module",
-    "homepage": "https://drupal.org/project/react_sub",
+    "homepage": "https://drupal.org/project/js_app_block",
     "authors": [
         {
             "name": "Adam Fasoldt (loopy3025)",
@@ -11,8 +11,8 @@
         }
     ],
     "support": {
-        "issues": "https://drupal.org/project/issues/react_sub",
-        "source": "https://github.com/loopy3025/react_sub"
+        "issues": "https://drupal.org/project/issues/js_app_block",
+        "source": "https://github.com/loopy3025/js_app_block"
     },
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",

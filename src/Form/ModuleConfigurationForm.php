@@ -1,5 +1,5 @@
 <?php
-namespace Drupal\react_sub\Form;
+namespace Drupal\js_app_block\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -9,13 +9,13 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class ModuleConfigurationForm extends ConfigFormBase {
   /** @var string Config settings */
-  const SETTINGS = 'react_sub.settings';
+  const SETTINGS = 'js_app_block.settings';
 
   /** 
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'react_sub_admin_settings';
+    return 'js_app_block_admin_settings';
   }
 
   /** 
@@ -34,12 +34,12 @@ class ModuleConfigurationForm extends ConfigFormBase {
     $config = $this->config(static::SETTINGS);
 
     //setting for enabling react globally on every page
-    $form['react_sub_global_react'] = [
+    $form['js_app_block_global_react'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Enable React Globally'),
       '#default_value' => $config->get('global_react'),
     ];  
-    $form['react_sub_app_script'] = [
+    $form['js_app_block_app_script'] = [
       '#type' => 'textfield',
       '#title' => $this->t('React App Script'),
       '#default_value' => $config->get('app_script'),
@@ -56,8 +56,8 @@ class ModuleConfigurationForm extends ConfigFormBase {
       // Retrieve the configuration
        $this->configFactory->getEditable(static::SETTINGS)
       // Set the submitted configuration setting
-      ->set('global_react', $form_state->getValue('react_sub_global_react'))
-      ->set('app_script', $form_state->getValue('react_sub_app_script'))
+      ->set('global_react', $form_state->getValue('js_app_block_global_react'))
+      ->set('app_script', $form_state->getValue('js_app_block_app_script'))
       ->save();
 
     parent::submitForm($form, $form_state);

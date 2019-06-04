@@ -1,7 +1,7 @@
 react-sub.settings:
   path: '/admin/configuration/react-sub/settings'
   defaults:
-    _form: '\Drupal\react_sub\Form\ModuleConfigurationForm'
+    _form: '\Drupal\js_app_block\Form\ModuleConfigurationForm'
     _title: 'Settings - React Subpages'
   requirements:
     _permission: 'administer site configuration'

@@ -1,0 +1,9 @@
+<?php
+/**
+ * Creates a variable for the app script
+ */
+function js_app_block_update_8001() {
+  $config = \Drupal::service('config.factory')->getEditable('js_app_block.settings');
+  $config -> set('app_script','/sites/default/files/js_app_block/example.js') -> save();
+  $config -> set('global_react',0) -> save();
+}
