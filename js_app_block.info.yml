@@ -1,6 +1,6 @@
-name: React Subpages
+name: Javascript App Block
 description: Allows users to include their custom react apps on specific pages in a traditional, non-decoupled Drupal 8 installation.
-package: WebNY
+package: Javascript
 type: module
-version: 1.4
+version: 1.7
 core: 8.x

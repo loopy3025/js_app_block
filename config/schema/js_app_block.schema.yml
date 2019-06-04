@@ -1,10 +1,10 @@
-react_sub:
+js_app_block:
   type: mapping
-  label: "React Subpages"
+  label: "Javascript App Block"
   mapping:
     global_react:
       type: boolean
       label: "React Installed Globally"
     app_script:
       type: string
-      label: "React App Script"
+      label: "Javascript App Block Script"

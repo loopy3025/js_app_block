@@ -3,12 +3,12 @@
 // here
 
 // include react library if necessary
-function react_sub_page_attachments(array &$attachments) {
-  $react_global = \Drupal::config('react_sub.settings')->get('global_react');
+function js_app_block_page_attachments(array &$attachments) {
+  $react_global = \Drupal::config('js_app_block.settings')->get('global_react');
   // if our variable for setting react globally is set, or if a react block is present, include react
   if ($react_global == 1){
-    $attachments['#attached']['library'][] = 'react_sub/react';
-    $attachments['#attached']['library'][] = 'react_sub/react-dom';
+    $attachments['#attached']['library'][] = 'js_app_block/react';
+    $attachments['#attached']['library'][] = 'js_app_block/react-dom';
   }
   //first step: get global variable for react app
   //if not null
