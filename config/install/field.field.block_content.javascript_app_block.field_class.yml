@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.javascript_app_block
+    - field.storage.block_content.field_class
+  enforced:
+    module:
+      - js_app_block
+id: block_content.javascript_app_block.field_class
+field_name: field_class
+entity_type: block_content
+bundle: javascript_app_block
+label: Class
+description: 'The wrapper class that is referenced in your Javascript code will be added to every instance of this block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

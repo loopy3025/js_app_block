@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.javascript_app_block
+    - field.field.block_content.javascript_app_block.field_class
+    - field.field.block_content.javascript_app_block.field_include_react_library
+    - field.field.block_content.javascript_app_block.field_javascript_file
+  enforced:
+    module:
+      - js_app_block
+id: block_content.javascript_app_block.default
+targetEntityType: block_content
+bundle: javascript_app_block
+mode: default
+content:
+  field_javascript_file:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_class: true
+  field_include_react_library: true

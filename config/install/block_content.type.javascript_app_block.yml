@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - js_app_block
+id: javascript_app_block
+label: 'Javascript App Block'
+revision: 0
+description: 'This creates a wrapper for an instance of a Javascript App.'

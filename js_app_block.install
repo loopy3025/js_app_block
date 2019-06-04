@@ -1,5 +1,11 @@
 <?php
 /**
+ * Enable config changes
+ */
+function js_app_block_update_8010() {
+  $config = \Drupal::service('config.factory')->getEditable('js_app_block.settings');
+}
+/**
  * Creates a variable for the app script
  */
 function js_app_block_update_8009() {
