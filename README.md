@@ -1,6 +1,6 @@
-# Javascript Blocks Module
+# Javascript App Block Module
 
-This module will allow users to include any number of JS Apps (such as React or Angular) on any non-decoupled Drupal site. Users will also be able to determine whether they want to reference the remote library or a local copy. Using blocks, the module will let users decide which region will be used to display React content and the location of the javascript being used to process the app.
+This module will allow users to include any number of JS Apps (such as React or Angular) on any non-decoupled Drupal site. Users will also be able to determine whether they want to reference the remote library or a local copy. Using blocks, the module will let users decide which region will be used to display JS app content and the location of the javascript being used to process the app.
 
 ## To Do
 
