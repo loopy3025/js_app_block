@@ -1,17 +1,28 @@
-]langcode: en
+langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.javascript_app_block
+    - field.field.block_content.javascript_app_block.field_app_library
     - field.field.block_content.javascript_app_block.field_class
   enforced:
     module:
       - js_app_block
+_core:
+  default_config_hash: K6h1VJJ6V0YkBbeTUQL-oxzcrieTWH88V593L3uy8lk
 id: block_content.javascript_app_block.default
 targetEntityType: block_content
 bundle: javascript_app_block
 mode: default
 content:
+  field_app_library:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_class:
     weight: 3
     settings:

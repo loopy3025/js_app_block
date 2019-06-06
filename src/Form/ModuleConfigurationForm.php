@@ -46,6 +46,11 @@ class ModuleConfigurationForm extends ConfigFormBase {
       '#default_value' => $config->get('enable_js_app'),
       '#description' => 'Javascript file: docroot/modules/custom/js_app_block/js/js-app.js',
     ];  
+    $form['js_app_block_app_script'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('React App Script'),
+      '#default_value' => $config->get('app_script'),
+    ];  
 
     return parent::buildForm($form, $form_state);
   }

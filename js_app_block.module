@@ -29,4 +29,7 @@ function js_app_block_page_attachments(array &$attachments) {
   }
 }
 
-//template_preprocess_block()
+function js_app_block_template_preprocess_block(array &$variables) {
+  //error?
+  $variables['attributes']['classes'][] = 'newclass';
+}
