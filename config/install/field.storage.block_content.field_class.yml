@@ -6,9 +6,6 @@ dependencies:
       - js_app_block
   module:
     - block_content
-  enforced:
-    module:
-      - js_app_block
 id: block_content.field_class
 field_name: field_class
 entity_type: block_content

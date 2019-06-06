@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - block_content.type.javascript_app_block
-    - field.field.block_content.javascript_app_block.field_library
+    - field.field.block_content.javascript_app_block.field_app_library
     - field.field.block_content.javascript_app_block.field_class
   enforced:
     module:
@@ -14,27 +14,20 @@ bundle: javascript_app_block
 mode: default
 content:
   field_app_library:
-    weight: 26
+    weight: 0
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_class:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
+    type: string
+    weight: 1
     region: content
-  info:
-    type: string_textfield
-    weight: 0
-    region: content
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_include_react_library: true
