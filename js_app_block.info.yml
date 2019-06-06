@@ -1,5 +1,5 @@
 name: Javascript App Block
-description: Allows users to include their custom react apps on specific pages in a traditional, non-decoupled Drupal 8 installation.
+description: Adds a custom javascript app to a block.
 package: Javascript
 type: module
 version: 1.7

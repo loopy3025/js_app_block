@@ -39,12 +39,13 @@ class ModuleConfigurationForm extends ConfigFormBase {
       '#title' => $this->t('Enable React Globally'),
       '#default_value' => $config->get('global_react'),
     ];  
-    $form['js_app_block_app_script'] = [
-      '#type' => 'textfield',
-      '#title' => $this->t('React App Script'),
-      '#default_value' => $config->get('app_script'),
+    //setting for enabling react globally on every page
+    $form['js_app_block_enable_js_app'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Enable the Javascript App'),
+      '#default_value' => $config->get('enable_js_app'),
+      '#description' => 'Javascript file: docroot/modules/custom/js_app_block/js/js-app.js',
     ];  
-    
 
     return parent::buildForm($form, $form_state);
   }
@@ -57,7 +58,7 @@ class ModuleConfigurationForm extends ConfigFormBase {
        $this->configFactory->getEditable(static::SETTINGS)
       // Set the submitted configuration setting
       ->set('global_react', $form_state->getValue('js_app_block_global_react'))
-      ->set('app_script', $form_state->getValue('js_app_block_app_script'))
+      ->set('enable_js_app', $form_state->getValue('js_app_block_enable_js_app'))
       ->save();
 
     parent::submitForm($form, $form_state);

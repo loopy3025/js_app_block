@@ -1,13 +1,32 @@
 <?php
-// logic getting info on any react blocks that may be present
-// here
+use \Drupal\block_content\BlockContentInterface;
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ * @param array $suggestions
+ * @param array $variables
+ */
+function js_app_block_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  // Block suggestions for custom block bundles.
+  if (isset($variables['elements']['content']['#block_content']) && $variables['elements']['content']['#block_content'] instanceof BlockContentInterface) {
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}
 
-// include react library if necessary
 function js_app_block_page_attachments(array &$attachments) {
   $react_global = \Drupal::config('js_app_block.settings')->get('global_react');
-  // if our variable for setting react globally is set, or if a react block is present, include react
+  // if our variable for setting react globally is set, include react
+  // this still exists because users may or may not already have react loading in the site
   if ($react_global == 1){
     $attachments['#attached']['library'][] = 'js_app_block/react';
     $attachments['#attached']['library'][] = 'js_app_block/react-dom';
   }
+  $enable_app = \Drupal::config('js_app_block.settings')->get('enable_js_app');
+  // if our block is present, include the libraries needed
+  // check to see if the js app is enabled through the admin page
+  if ($enable_app == 1){ 
+    // in either case, include our library
+    $attachments['#attached']['library'][] = 'js_app_block/js-app';
+  }
 }
+
+//template_preprocess_block()

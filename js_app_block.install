@@ -1,9 +1,10 @@
 <?php
 /**
- * Enable config changes
+ * Set enable script toggle
  */
-function js_app_block_update_8010() {
+function js_app_block_update_8013() {
   $config = \Drupal::service('config.factory')->getEditable('js_app_block.settings');
+  $config -> set('enable_js_app',0) -> save();
 }
 /**
  * Creates a variable for the app script
