@@ -23,13 +23,76 @@ function js_app_block_page_attachments(array &$attachments) {
   $enable_app = \Drupal::config('js_app_block.settings')->get('enable_js_app');
   // if our block is present, include the libraries needed
   // check to see if the js app is enabled through the admin page
-  if ($enable_app == 1){ 
-    // in either case, include our library
-    $attachments['#attached']['library'][] = 'js_app_block/js-app';
-  }
+  // if ($enable_app == 1){ 
+  //   // in either case, include our library
+  //   $attachments['#attached']['library'][] = 'js_app_block/js-app';
+  // }
 }
 
-function js_app_block_template_preprocess_block(array &$variables) {
-  //error?
-  $variables['attributes']['classes'][] = 'newclass';
+// function js_app_block_block_view_alter(&$data, $block) {
+//   if ($data->bundle == 'javascript_app_block') {
+//     //$block['variables']['classes'][] = "testclass";
+//     $data['content']['#theme_wrappers'][] = "testclass";
+//   }
+// }
+
+
+/**
+* Implements hook_preprocess_block() to modify the block variables
+**/
+function js_app_block_preprocess_block(&$variables) {
+ // foreach ($variables as $variable) echo($variable);
+ // 
+  //echo($variables['elements']['#block']);
+  //if ($variables['block_type'] == 'javascript_app_block') {
+   //echo($variables['block_type']);
+  //   //$variables['classes'][] = "testclass";
+  //   echo("found bundle");
+  // }
+  //echo($variables['entity_type']);
+  // foreach ($variables['elements'] as $element) {
+  //   echo($element . ' | ');
+  // }
+  // echo($variables['elements']);
+  //$uuid = $variables['elements']['#block']['block_id'];
+  // $block = \Drupal::service('entity.repository')->loadEntityByUuid('block_content', $uuid);
+  // //if ($block) {
+  //   $block_type = $block->bundle();
+  //   echo($block_type);
+  //}
+
 }
+
+/**
+* Implements hook_theme() to add the template definition.
+**/
+function js_app_block_theme($existing, $type, $theme, $path) {
+  return array(
+    'field__block_content__field_app_library__javascript_app_block' => array(),
+  );
+}
+
+
+// register the templates
+//function js_app_block_theme($existing, $type, $theme, $path) {
+  // return [
+  //   '' => [
+  //     'variables' => ['test_var' => NULL],
+  //   ],
+  // ];
+  // $theme['field__block_content__field_app_library__javascript_app_block'] = [
+  //   'template' => 'field__block_content__field_app_library__javascript_app_block',
+  // ];
+
+  // return $theme;
+  // return [
+  //   'field__block_content__field_app_library__javascript_app_block' => [
+  //     'template' => ['field__block_content__field_app_library__javascript_app_block'],
+  //   ],
+  // ];
+//}
+
+// function js_app_block_template_preprocess_block(array &$variables) {
+//   //error?
+//   $variables['attributes']['classes'][] = 'newclass';
+// }

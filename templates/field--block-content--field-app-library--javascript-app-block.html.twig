@@ -51,7 +51,7 @@
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
-
+<h3>Hello from field template {{ attributes.bundle }}</h3>
 {% if label_hidden %}
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field__items') }}>
